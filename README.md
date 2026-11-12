@@ -52,7 +52,7 @@ gerador-cobranca-whatsapp/
 
 1. Clique no botão **Open in Colab** no topo desta página.
 
-2. No **Passo 1**, preencha o nome do atendente, nome da empresa e DDD padrão (ou deixe em branco para os valores padrão).
+2. No **Passo 1**, preencha o nome do atendente e o nome da empresa ou deixe em branco para os valores padrão).
 
 3. No **Passo 2**, execute a célula e selecione sua planilha `.xls` ou `.xlsx`. O arquivo HTML será baixado automaticamente.
 
