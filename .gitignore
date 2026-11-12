@@ -1,0 +1,13 @@
+# Ambientes virtuais e cache Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.vscode/
+
+# Bloquear planilhas reais e HTMLs gerados com dados sensíveis
+*.xls
+*.xlsx
+*.csv
+*.html
