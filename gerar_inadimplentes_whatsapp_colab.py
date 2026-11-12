@@ -142,7 +142,7 @@ def normalizar_texto(valor: Any) -> str:
 
 def contem_marcador_cliente(linhas: list[list[Any]]) -> bool:
     """Reconhece os marcadores no relatorio."""
-    marcadores = {"informacoes do aluno:", "aluno:"}
+    marcadores = {"informacoes do aluno:", "aluno:", "informacoes do inadimplente:", "inadimplente:"}
     return any(
         any(normalizar_texto(celula) in marcadores for celula in linha)
         for linha in linhas
@@ -214,6 +214,7 @@ def ler_planilha(caminho: str) -> tuple[list[list[Any]], str]:
 
 ROTULOS_CONHECIDOS = {
     "informacoes do aluno:",
+    "informacoes do inadimplente:",
     "informacoes do responsavel:",
     "idade:",
     "endereco:",
@@ -237,6 +238,7 @@ ROTULOS_CONHECIDOS = {
     "data negativ.",
     "total vencido:",
     "aluno:",
+    "inadimplente:",
     "telefone:",
     "nº parc",
     "no parc",
@@ -327,7 +329,7 @@ def obter_celula(linha: list[Any], coluna: int | None) -> Any:
 
 
 def _indices_inicio_registro(linhas: list[list[Any]]) -> list[int]:
-    marcadores = {"informacoes do aluno:", "aluno:"}
+    marcadores = {"informacoes do aluno:", "aluno:", "informacoes do inadimplente:", "inadimplente:"}
     return [
         indice
         for indice, linha in enumerate(linhas)
@@ -337,7 +339,7 @@ def _indices_inicio_registro(linhas: list[list[Any]]) -> list[int]:
 
 def _extrair_nome_principal(linha: list[Any]) -> str:
     normalizados = [normalizar_texto(v) for v in linha]
-    for marcador in ("informacoes do aluno:", "aluno:"):
+    for marcador in ("informacoes do aluno:", "aluno:", "informacoes do inadimplente:", "inadimplente:"):
         if marcador in normalizados:
             i = normalizados.index(marcador)
             return proximo_valor_nao_vazio(linha, i + 1)

@@ -11,3 +11,6 @@ venv/
 *.xlsx
 *.csv
 *.html
+
+# Permitir planilha modelo de exemplo
+!Planilha_Padrao_Inadimplentes.xlsx
