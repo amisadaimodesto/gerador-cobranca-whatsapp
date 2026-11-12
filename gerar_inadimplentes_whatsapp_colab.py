@@ -1398,7 +1398,7 @@ def gerar_html(
       vertical-align: top;
       font-size: 13px;
     }}
-      th:nth-child(4), td:nth-child(4) {{
+      td:nth-child(3) {{
         filter: blur(7px);
         user-select: none;
         pointer-events: none;
