@@ -1398,6 +1398,11 @@ def gerar_html(
       vertical-align: top;
       font-size: 13px;
     }}
+      th:nth-child(4), td:nth-child(4) {
+        filter: blur(7px);
+        user-select: none;
+        pointer-events: none;
+      }
     tbody tr:hover {{ background: #f9fbfe; }}
     .numero {{ width: 46px; text-align: center; color: var(--cinza); }}
     .nome-principal {{ font-size: 14px; color: var(--azul); }}
