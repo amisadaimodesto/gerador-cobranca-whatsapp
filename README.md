@@ -1,5 +1,13 @@
 # 📊 Gerador de Painel de Cobrança via WhatsApp Web
 
+![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Google Colab](https://img.shields.io/badge/Google%20Colab-Notebook-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)
+![Excel](https://img.shields.io/badge/Excel-.XLS%20%2F%20.XLSX-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-Painel%20Aut%C3%B4nomo-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-Responsivo-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![WhatsApp](https://img.shields.io/badge/WhatsApp%20Web-Integra%C3%A7%C3%A3o-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)
+![License](https://img.shields.io/badge/Licen%C3%A7a-CC%20BY--NC%204.0-lightgrey?style=for-the-badge&logo=creativecommons&logoColor=black)
 
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amisadaimodesto/gerador-cobranca-whatsapp/blob/main/gerador_cobranca_colab.ipynb)
