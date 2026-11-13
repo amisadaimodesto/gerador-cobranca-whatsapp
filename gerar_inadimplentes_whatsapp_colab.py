@@ -1398,12 +1398,7 @@ def gerar_html(
       vertical-align: top;
       font-size: 13px;
     }}
-      td:nth-child(3) {{
-        filter: blur(7px);
-        user-select: none;
-        pointer-events: none;
-      }}
-    tbody tr:hover {{ background: #f9fbfe; }}
+tbody tr:hover {{ background: #f9fbfe; }}
     .numero {{ width: 46px; text-align: center; color: var(--cinza); }}
     .nome-principal {{ font-size: 14px; color: var(--azul); }}
     .secundario {{ display: block; color: var(--cinza); margin-top: 6px; line-height: 1.35; }}
